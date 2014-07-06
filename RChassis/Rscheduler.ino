@@ -1,8 +1,4 @@
 #include "Rscheduler.h"
-/* contains functions for scheduler operations
- * 
- * 20140705 - first one
- */
 
 // create the list o' tasks
 Rtask tasks[MAXTASKS];
@@ -28,7 +24,7 @@ void runSched(void){
 
 // called in setup(), once for each function to schedule
 // returns int just in case I wanna catch errors ever
-int addTask (void (*pointer)(void), uint32_t repeat, uint32_t wait){
+int addTask (void (*pointer)(void), uint32_t repeat, uint32_t wait=0){
   static uint32_t schedCount = 0;
   if(schedCount < MAXTASKS){
     tasks[schedCount].task = pointer;
