@@ -1,0 +1,5 @@
+2014-07-06 v0.1
+	added MsTimer2 dependency
+	added simple scheduler
+2014-06-27 v0.0
+	first go, setting things up and dialing in the encoders
