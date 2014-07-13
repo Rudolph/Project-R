@@ -1,3 +1,6 @@
+2014-07-12
+	finally wrote some motor control parts
+	started I2C bits
 2014-07-06 v0.1
 	added MsTimer2 dependency
 	added simple scheduler

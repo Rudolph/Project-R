@@ -12,7 +12,7 @@ struct Rtask {
   uint32_t wait;
 };
 
-int addTask(void (*pointer)(void), uint32_t repeat, uint32_t wait);
+int addTask(void (*pointer)(void), uint32_t repeat, uint32_t wait=0);
 void runSched(void);
 
 #endif

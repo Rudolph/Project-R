@@ -24,7 +24,7 @@ void runSched(void){
 
 // called in setup(), once for each function to schedule
 // returns int just in case I wanna catch errors ever
-int addTask (void (*pointer)(void), uint32_t repeat, uint32_t wait=0){
+int addTask (void (*pointer)(void), uint32_t repeat, uint32_t wait){
   static uint32_t schedCount = 0;
   if(schedCount < MAXTASKS){
     tasks[schedCount].task = pointer;
