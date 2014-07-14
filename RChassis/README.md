@@ -39,9 +39,11 @@ Defaults to address 42 (0x54)
 `* not yet implemented`
 
 ##ToDo
+```
 "drive for X encoder clicks"
 get/set I2C address, servo centers, from/to EEPROM
 devise status packet to master, including encoder counts, error, etc...
 rework encoder count reset and when
 add servo stuff
 check (read "proper test") assembly of 2 bytes into signed int for motor speed
+```
