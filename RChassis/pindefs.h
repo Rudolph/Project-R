@@ -19,6 +19,12 @@
 #define amps  A0
 #define ampsFault  0
 
+// Head servos
+#define headpan 12
+#define headtilt 13
+
 // the rest
 #define statusLED  1
+#define ez1 A1
+#define dcbrick 19
 

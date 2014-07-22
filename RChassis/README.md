@@ -36,7 +36,7 @@ Defaults to address 42 (0x54)
     * 0x54 - (T or 84) for Tilt servo center followed by int
     * 0x49 - (I or 73) I for I2C address followed by int new address
 
-`* not yet implemented`
+`* = not yet implemented`
 
 ##ToDo
 ```
@@ -46,4 +46,6 @@ devise status packet to master, including encoder counts, error, etc...
 rework encoder count reset and when
 add servo stuff
 check (read "proper test") assembly of 2 bytes into signed int for motor speed
+check for AC adapter, disable motors if present (low at jack, test for high)
+add EZ-1
 ```
