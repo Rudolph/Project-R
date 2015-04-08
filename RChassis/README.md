@@ -32,8 +32,8 @@ Defaults to address 42 (0x54)
 
 * 0x44 - (D or 68)*
   * D for Default, followed by
-    * 0x50 - (P or 80) for Pan servo center followed by int
-    * 0x54 - (T or 84) for Tilt servo center followed by int
+    * 0x50 - (P or 80) for Pan servo default position followed by int
+    * 0x54 - (T or 84) for Tilt servo default position followed by int
     * 0x49 - (I or 73) I for I2C address followed by int new address
 
 `* = not yet implemented`

@@ -22,14 +22,18 @@ void getWire(int count){
       // 0 or 1
       i = Wire.read();
       if(i == 1){
-        enableMotors();
+        if (DEBUG) Serial.println("enable motors");
+//        enableMotors();
       }else{
+        if (DEBUG) Serial.println("disable motors");
         disableMotors();
       }
       break;
     case 0x4C:
       // read int into lMotorSpeed
       i = (Wire.read() << 8) + Wire.read();
+      if (DEBUG) Serial.print("lMotorSpeed: ");
+      if (DEBUG) Serial.println(i);
       if(i > -256 && i < 256){
         lMotorSpeed = i;
       }
@@ -37,6 +41,8 @@ void getWire(int count){
     case 0x52:
       // read int into rMotorSpeed
       i = (Wire.read() << 8) + Wire.read();
+      if (DEBUG) Serial.print("rMotorSpeed: ");
+      if (DEBUG) Serial.println(i);
       if(i > -256 && i < 256){
         rMotorSpeed = i;
       }
@@ -44,6 +50,8 @@ void getWire(int count){
     case 0x42:
       // read int into both motor speeds
       i = (Wire.read() << 8) + Wire.read();
+      if (DEBUG) Serial.print("both motors: ");
+      if (DEBUG) Serial.println(i);
       if(i > -256 && i < 256){
         rMotorSpeed = i;
         lMotorSpeed = i;

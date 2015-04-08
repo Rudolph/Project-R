@@ -4,6 +4,8 @@
 #include "pindefs.h"
 #include "Rscheduler.h"
 
+#define DEBUG 1
+
 // various variables
 int motorsOn = 0;
 int lMotorSpeed = 0;
