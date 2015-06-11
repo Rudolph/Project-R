@@ -1,6 +1,11 @@
 RChassis
 ----------
 
+This is the old code for the ATMega1284 based chassis for Ruprecht. This is no
+longer the code used in Project R. I'm leaving it here in a renamed dir for
+reference purposes, but it will likely be removed completely when the new version
+is complete.
+
 Chassis code for [Ruprecht the Rudforce Research Robot](http://hackaday.io/project/1615-Project-R)
 
 Uses [mighty1284p](https://github.com/JChristensen/mighty-1284p) to put arduino stuff on an ATmega1284p
@@ -12,7 +17,7 @@ License is yet to be determined, but it'll definitely be open source. I'm leanin
 ----------
 
 ##I2C Commands
-Defaults to address 42 (0x54)
+Defaults to address 42 (0x2A)
 
 * 0x45 - (E or 69)
   * E for Enable, followed by a 0 or 1 to disable or enable, respectively
